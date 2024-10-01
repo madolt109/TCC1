@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <center>
+    <h1>VOTAÇÃO</h1>
+<div>
+    <img src="PATH OF TITANS.jpg" alt="">
+    <button onclick="a1()"> PATH OF TITANS</button>
+    </div>
+
+    <div>
+        <img src="the isle.jpg" alt="">
+    <button onclick="a2()">THE ISLE</button>
+    </div>
+    <section id="s1">TIME PATH</section>
+    <section id="s2">TIME THE ISLE</section>
+</center>
+    <script>
+        let contador1 = 0
+        let contador2 = 0
+
+let vot1 = document.querySelector('section#s1')
+let vot2 = document.querySelector('section#s2')
+
+function a1 (){
+    contador1++
+    vot1.innerHTML = `<p>candidatoA <marks>${contador1}</marks> votos!!</p>`
+}
+
+function a2 () {
+    contador2++
+    vot2.innerHTML = `<p>candidatoB <marks>${contador2}</marks> votos!!</p>`
+}
+  
+
+
+    </script>
+</body>
+</html>
